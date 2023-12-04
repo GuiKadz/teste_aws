@@ -2,8 +2,8 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res)=>{
-    res.send("Deploy bem sucedido");
+app.get('/', (request, response)=>{
+response.json({hello: "world"});
 })
 
 app.listen(3000);
